@@ -15,14 +15,14 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-      ApiUrl: '//ubq.pool.sexy/',
+      ApiUrl: '//ubiqpool.phoenixmax.org/',
 
       // HTTP mining endpoint
-      HttpHost: 'http://ubq.pool.sexy',
+      HttpHost: 'http://ubiqpool.phoenixmax.org',
       HttpPort: 9999,
 
       // Stratum mining endpoint
-      StratumHost: 'ubq.pool.sexy',
+      StratumHost: 'ubiqpool.phoenixmax.org',
       StratumPort: 9009,
 
       // Fee and payout details
