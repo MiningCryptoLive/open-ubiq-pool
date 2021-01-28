@@ -15,18 +15,18 @@ module.exports = function(environment) {
 
     APP: {
       // API host and port
-      ApiUrl: '//ubiqpool.phoenixmax.org/',
+      ApiUrl: '//ubiq.phoenixmax.org/',
 
       // HTTP mining endpoint
-      HttpHost: 'http://ubiqpool.phoenixmax.org',
+      HttpHost: 'http://ubiq.phoenixmax.org',
       HttpPort: 9999,
 
       // Stratum mining endpoint
-      StratumHost: 'ubiqpool.phoenixmax.org',
+      StratumHost: 'ubiq.phoenixmax.org',
       StratumPort: 9009,
 
       // Fee and payout details
-      PoolFee: '0.25%',
+      PoolFee: '0.50%',
       PayoutThreshold: '0.5 Ubiq',
 
       // For network hashrate (change for your favourite fork)
@@ -38,7 +38,7 @@ module.exports = function(environment) {
     /* Override ApiUrl just for development, while you are customizing
       frontend markup and css theme on your workstation.
     */
-    ENV.APP.ApiUrl = 'http://ubiqpool.phoenixmax.org:8080/'
+    ENV.APP.ApiUrl = 'http://ubiq.phoenixmax.org:8080/'
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
