@@ -19,11 +19,11 @@ module.exports = function(environment) {
 
       // HTTP mining endpoint
       HttpHost: 'http://ubiq.phoenixmax.org',
-      HttpPort: 9999,
+      HttpPort: 8888,
 
       // Stratum mining endpoint
       StratumHost: 'ubiq.phoenixmax.org',
-      StratumPort: 9009,
+      StratumPort: 8004,
 
       // Fee and payout details
       PoolFee: '0.50%',
