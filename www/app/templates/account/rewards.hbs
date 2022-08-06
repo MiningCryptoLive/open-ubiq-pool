@@ -1,7 +1,8 @@
 <div class="container">
+<div class="note note-success">
   {{#if model.rewards}}
   <h4>Your Latest Rewards</h4>
-   <table class="table table-condensed table-striped">
+  <table class="table table-condensed table-striped">
   {{#each model.sumrewards as |sumreward|}}
   <tr>
     <td>{{sumreward.name}}</td>
@@ -14,6 +15,7 @@
     <thead>
       <tr>
         <th>Block Height</th>
+        <th>Time Found</th>
         <th>Reward</th>
         <th>Round Share</th>
       </tr>
@@ -22,6 +24,7 @@
       {{#each model.rewards as |tx|}}
         <tr>
           <td>{{format-number  tx.blockheight}}</td>
+          <td>{{format-date-locale tx.timestamp}}</td>
           <td>
 		{{#if tx.immature}}
                         <span class="label label-default">{{format-balance tx.reward}}</span>
@@ -29,7 +32,7 @@
                         <span class="label label-success">{{format-balance tx.reward}}</span>
                 {{/if}}
 	  </td>
-          <td>{{format-number tx.percent style='percent' maximumFractionDigits='6'}}</td>
+          <td>{{format-number tx.percent style='percent' maximumFractionDigits='2'}}</td>
         </tr>
       {{/each}}
     </tbody>
@@ -37,4 +40,5 @@
   {{else}}
   <h3>No rewards yet</h3>
   {{/if}}
+</div>
 </div>
